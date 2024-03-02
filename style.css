@@ -99,10 +99,18 @@ header {
 }
 
 .titulo i {
+  
   background-color: #065E7C;
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 4.0rem;
+  height: 4.0rem;
 
-  padding: 1.2px;
-  border-radius: 99.9rem;
+  
+  padding: 1.2rem;
+  border-radius: 50%;
+  
+}
+
+.titulo i img {
+  width: 2.0rem;
+  height: 2.0rem;
 }
