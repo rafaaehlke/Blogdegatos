@@ -140,7 +140,6 @@ button {
 
 /* textos */
 p {
-  border: 1px solid green;
   color: var(--var-font-color-400);
   line-height: 160%;
 
@@ -171,7 +170,7 @@ h2 {
 
 .gallery img{
   width: 15.1rem;
-  height: 9.9rem;
+  height: 9.8rem;
   object-fit: cover;
   border-radius: .5rem;
   
