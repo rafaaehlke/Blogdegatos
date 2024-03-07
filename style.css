@@ -28,7 +28,7 @@ body {
 
 .container {
   padding: 1.2rem 2.8rem;
-  width: min(43.4rem, 100%);
+  width: max(43.4rem, 100%);
 }
 
 /* cabeçalho */
@@ -81,27 +81,11 @@ header {
   color: white;
 }
 
-/* footer */
-
-footer {
-  background-color: var(--var-bc-color);
-  width: 43rem;
-  height: 6.4rem;
-}
-
-footer p {
-  
-  color: var(--var-font-color-white);
-
-  padding: 1.6rem;
-}
-
 /* main */
 
-.gato01 {
-  /* border: 2px solid red; */
+.gato01 img {
+  border: 2px solid red;
   width: 100%;
-  object-fit: cover;
 }
 .titulo h1 {
   font-size: 2.4rem;
@@ -110,8 +94,8 @@ footer p {
 
   color: var(--var-font-color-700);
 
-  padding-top: 3.1rem;
-  padding-bottom: 0.8rem;
+  /* padding-top: 3.1rem;
+  padding-bottom: 0.8rem; */
 }
 
 /* Button */
@@ -157,6 +141,8 @@ h2 {
   margin-bottom: 3.2rem;
 }
 
+/* section */
+
 .item {
   display: grid;
   grid-template-areas:
@@ -191,4 +177,86 @@ h2 {
 .tags span {
   font-size: 1.4rem;
   line-height: 160%;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--var-bc-color);
+  
+  width: 43rem;
+  height: 6.4rem;
+}
+
+footer p {
+  
+  color: var(--var-font-color-white);
+
+  padding: 1.6rem;
+}
+/* media */
+
+@media (min-width: 768px) { 
+  .app {
+    display: grid;
+    grid-template-areas: 
+    "header header header" 
+    "main main gallery "
+    "footer footer footer";
+    gap: 3.4rem 4.4rem;
+    
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    padding: 1.2rem 2.8rem;
+    width: min(144rem, 100%);
+  }
+  
+  header {
+    grid-area: header;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    
+  }
+  
+  main {
+    grid-area: main;
+    width: 80.0rem;
+    margin-left: 10.9rem;
+    justify-content: center;
+    
+  }
+  
+  
+  .titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .gallery {
+    border: 1px solid purple;
+    justify-content: center;
+    grid-area: gallery;
+    
+    width: 38.4rem;
+  }
+  .input-wrapper input {
+    width: 108.3rem;
+  }
+  
+  footer {
+    grid-area: footer;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
