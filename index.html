@@ -10,56 +10,61 @@
       rel="stylesheet"
     />
     <title>Blog de Gatos</title>
-    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="app">
       <header class="container">
+      
         <img
           class="logo"
           src="./assets/logo.svg"
           alt="logo, pata de gato com fundo arredondado em branco"
-        />
+          />
+
         <form action="">
           <div class="input-wrapper">
             <label for="search">Pesquise por artigos</label>
             <input
               type="text"
-              name="Pesquise por artigos"
               id="search"
               placeholder="Pesquise por artigos"
             />
           </div>
         </form>
         <img
-          class="avatar"
+          id="avatar"
           src="https://randomuser.me/api/portraits/women/14.jpg"
           alt="Mulher de péle branca e cabelos escuros, longo, franja jogada para lado direito, sobre o olho!"
         />
       </header>
- 
-      <main>
-        <div class="gato01">
-        <img
-        src="./assets/gato01.jpg"
-        alt="Imagem com o sombreado de um gato em preto, de fundo o céu com por do sol"
-        />
-      </div>
+
+      <main class="main">
         <div class="container">
+          <article>
+      <img
+      src="./assets/gato01.jpg"
+      alt="Imagem com o sombreado de um gato em preto, de fundo o céu com por do sol"
+      />
+    </article>
           <div class="titulo">
             <h1>Seriam os gatos astronautas?</h1>
-          
+
             <div class="feedback">
-          
               <button type="button" id="positive-button">
-                <img src="./assets/positive.svg" alt="icone para assinalar o conteudo como positivo">
+                <img
+                  src="./assets/positive.svg"
+                  alt="icone para assinalar o conteudo como positivo"
+                />
               </button>
-          
+
               <button type="button" id="negative-button">
-                <img src="./assets/negative.svg" alt="icone para assinalar o conteudo como negativo">
+                <img
+                  src="./assets/negative.svg"
+                  alt="icone para assinalar o conteudo como negativo"
+                />
               </button>
-          
             </div>
           </div>
           <p>
@@ -84,74 +89,81 @@
             interpretados como sinais de que os gatos seriam seres
             interplanetários.
           </p>
+
+          <section class="gallery">
+            <h2>Artigos relacionados</h2>
+
+            <!-- imagem dos gatos -->
+            <figure class="item"> 
+              <img src="./assets/gato02.png" alt="" />
+
+              <!-- detalhes= h3 e span com class=tags-->
+              <figcaption class="details">
+                <h3>Sábado preguiçoso</h3>
+                <div class="tags">
+                  <span
+                    >Descubra atividades interessantes para fazer com seu pet
+                    durante os finais de semana.</span
+                  >
+                </div>
+              </figcaption>
+            </figure>
+
+            <!-- imagem dos gatos -->
+            <figure class="item">
+              <img src="./assets/gato03.jpg" alt="" />
+
+              <!-- detalhes= h3 e span com class=tags-->
+              <figcaption class="details">
+                <h3>Balaio de Gatos</h3>
+                <div class="tags">
+                  <span
+                    >Como evitar confusões entre seus gatíneos e acostumá-los
+                    desde filhotes.</span
+                  >
+                </div>
+              </figcaption>
+            </figure>
+
+            <figure class="item">
+              <img src="./assets/gato04.jpg" alt="" />
+  
+              <figcaption class="details">
+                <h3>Cartela de cores</h3>
+                <div class="tags">
+                  <span>Seu gato é inverno intenso? Verão profundo? Descubra as cores que mais combinam com seu bichano.</span>
+                </div>
+              </figcaption>
+            </figure>
+  
+            <figure class="item">
+              <img src="./assets/gato05.jpg" alt="" />
+  
+              <figcaption class="details">
+                <h3>Os gatos sentem Frio</h3>
+                <div class="tags">
+                  <span>Preparem-se para a frente fria que vem para o país da melhor maneira possível.</span>
+                </div>
+              </figcaption>
+            </figure>
+  
+            <figure class="item">
+              <img src="./assets/gato06.jpg" alt="" />
+  
+              <figcaption class="details">
+                <h3>Conheça o Moacir</h3>
+                <div class="tags">
+                  <span>Moacir é o gatinho da semana do nosso blog. Venha conhecer sua história de superação.</span>
+                </div>
+              </figcaption>
+            </figure>
+  
+          </section>
         </div>
-        
       </main>
-
-      <div class="container">
-        <section class="gallery">
-          <h2>Artigos relacionados</h2>
-          <figure class="item">
-            <img src="./assets/gato02.png" alt="" />
-
-            <figcaption class="details">
-              <h3>Sábado preguiçoso</h3>
-              <div class="tags">
-                <span>Descubra atividades interessantes para fazer com seu pet durante os finais de semana.</span>
-              </div>
-            </figcaption>
-          </figure>
-
-          <figure class="item">
-            <img src="./assets/gato03.jpg" alt="" />
-
-            <figcaption class="details">
-              <h3>Balaio de Gatos</h3>
-              <div class="tags">
-                <span>Como evitar confusões entre seus gatíneos e acostumá-los desde filhotes.</span>
-              </div>
-            </figcaption>
-          </figure>
-
-          <figure class="item">
-            <img src="./assets/gato04.jpg" alt="" />
-
-            <figcaption class="details">
-              <h3>Cartela de cores</h3>
-              <div class="tags">
-                <span>Seu gato é inverno intenso? Verão profundo? Descubra as cores que mais combinam com seu bichano.</span>
-              </div>
-            </figcaption>
-          </figure>
-
-          <figure class="item">
-            <img src="./assets/gato05.jpg" alt="" />
-
-            <figcaption class="details">
-              <h3>Os gatos sentem Frio</h3>
-              <div class="tags">
-                <span>Preparem-se para a frente fria que vem para o país da melhor maneira possível.</span>
-              </div>
-            </figcaption>
-          </figure>
-
-          <figure class="item">
-            <img src="./assets/gato06.jpg" alt="" />
-
-            <figcaption class="details">
-              <h3>Conheça o Moacir</h3>
-              <div class="tags">
-                <span>Moacir é o gatinho da semana do nosso blog. Venha conhecer sua história de superação.</span>
-              </div>
-            </figcaption>
-          </figure>
-
-        </section>
-      </div>
       <footer class="container">
-        <p>© 2023 - Rocketseat Explorer
-        </p>
-        </footer>
-      </div>
+        <p>© 2023 - Rocketseat Explorer</p>
+      </footer>
+    </div>
   </body>
 </html>
