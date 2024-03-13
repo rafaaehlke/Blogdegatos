@@ -260,7 +260,6 @@ footer p {
   }
 
   .gallery {
-    border: 1px solid red;
     grid-column: 3/4;
     padding-right: 11rem;
   }
